@@ -3,7 +3,7 @@ from datetime import datetime as dt
 import pprint
 from bson.objectid import ObjectId
 
-connection_string = "mongodb+srv://emre:1234@test1.6bsz8bk.mongodb.net/?retryWrites=true&w=majority&authSource=admin"
+connection_string = ""                    # connection URL here
 client = MongoClient(connection_string)
 db = client.comp_db
 employers = db.employers
