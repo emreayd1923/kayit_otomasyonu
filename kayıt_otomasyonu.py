@@ -47,19 +47,7 @@ def employers_validator():
     }
 
     db.command("collMod", "employers", validator=validator)
-
-def insert_test_data():
     
-    test_data = {
-        "first_name": "Emre",
-        "last_name": "Aydogmus",
-        "date_of_birth": dt(2004, 11, 8),
-        "mail_address": "emreayd1923@gmail.com",
-        "phone_number": "(+90) 541 960 6432",
-        "date_of_employed": dt(2023, 3, 27)
-    }
-    inserted_id = employers.insert_one(test_data).inserted_id
-    print(inserted_id)
 
 def insert_new_data():
     global employers
